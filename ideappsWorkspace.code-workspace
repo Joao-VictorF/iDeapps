@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.tabSize": 2,
+		"editor.fastScrollSensitivity": 7,
+		"editor.hover.delay": 200,
+		"editor.letterSpacing": 2,
+		"editor.mouseWheelScrollSensitivity": 2,
+		"editor.tabCompletion": "on",
+		"editor.fontLigatures": true,
+		"editor.fontFamily": "Fira Code"
+	}
+}

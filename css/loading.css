@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+#site {
+  display: none;
+}
+#load {
+  min-height: 100vh;
+  background-image: url("../img/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}

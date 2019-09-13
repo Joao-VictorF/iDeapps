@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137965503-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-137965503-1');
+  </script>
+
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="theme-color" content="#e2ac0c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#e2ac0c">
+  <meta name="msapplication-navbutton-color" content="#e2ac0c">
+  <link rel="shortcut icon" href="img/icons/lamp.png" />
+  <title>iDeapps &mdash; Desenvolvimento de websites e aplicativos</title>
+  <meta name="description" content="Agência de desenvolvimento de sites e aplicativos"/>
+  <meta name="author" content="iDeapps"/>
+  <meta name="keywords" content="Desenvolvimento, desenvolvimento web, desenvolvimento de sites,
+  desenvolvimento mobile, desenvolvimento de aplicativos, desenvolvimento android, desenvolvimento IOS, desenvolvimento de sistemas"/>
+
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/loading.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+  <script src="js/jQuery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/Typed.js"></script>
+  <script type="text/javascript">
+      var pt = true;
+      var en = false;
+      var es = false;
+  </script>
+</head>
+
+<body>
+  <div id="load">
+    <img src="img/icons/preloader.gif" alt="loader" width="80" height="80"/>
+  </div>
+  
+  <div id="site">
+    <header>
+      <nav class="hidenav navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+          <div class="row justify-content-between">
+            <div class="col-lg-6 col-md-2 align-self-start">
+              <a class="navbar-brand" href="#"><img src="img/icons/whiteLogo.png" width="150"></a>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 align-self-end">
+              <div class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link borderBtm" href="#"> Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link borderBtm" id="marketingLink" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link borderBtm" id="contatoLink" href="#">Contato</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">
+                    <div class="dropdown">
+                      <a id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/icons/Bandeira_BR.png"  width="50" aria-haspopup="true">
+                        <span class="seta"> &#9662</span>
+                      </a>
+                      <div class="dropdown-menu" id="dropdown" aria-labelledby="dropdownMenu">
+                        <button class="dropdown-item" ><a href="es.html"><img src="img/icons/Bandeira_MX.png" width="50"></a></button>
+                        <button class="dropdown-item" ><a href="en.html"><img src="img/icons/Bandeira_EUA.png" width="50"></a></button>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </nav>
+
+      <nav class="navbar fixed-top">
+        <div class="menuToggle">
+          <input type="checkbox" class="menuLink" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="menu">
+            <a href="#"><li>Inicio</li></a>
+            <a href="#" id="marketingLink-sm"><li>Sobre</li></a>
+            <a href="#" id="contatoLink-sm"><li>Contato</li></a>
+            <br><br>
+            <div class="dropdown">
+              <a id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/icons/Bandeira_BR.png" width="50" aria-haspopup="true">
+                &#9662
+              </a>
+              <div class="dropdown-menu" id="dropdown2" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button"><a href="es.html"><img src="img/icons/Bandeira_MX.png" width="50"></a></button>
+                <button class="dropdown-item" type="button"><a href="en.html"><img src="img/icons/Bandeira_EUA.png" width="50"></a></button>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <div id="Carrousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="img/bg2.png" alt="First slide">
+            <div class="container-fluid">
+              <div class="carousel-caption text-left">
+                <h1 class="textType" id="bemVindo"></h1>
+                <p></p>
+                <p><a class="button btn btn-lg" id="Interesse" href="#" role="button">Vamos fazer algo interessante?</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="button" class="back-to-top" type="button"></button>
+
+      <section id="marketing">
+        <div class="container-fluid marketing">
+          <h2 class="text-center text" style="width:380px;">Quem somos nós?</h2>
+          <div class="row featurette quemSomos justify-content-center">
+            <div class="col-xl-10">
+              <h2 class="featurette-heading">
+                A iDeapps é uma empresa profissional e comprometida que oferece soluções em programação e comunicação através de tecnologia e inovação. <br>
+                <span id="quemSomos" class="text-muted"></span>
+              </h2>
+            </div>
+          </div>
+          <h2 class="text-center text" style="width:260px;">Nosso time</h2>
+          <div class="row featurette justify-content-center">
+            <div class="col-xl-10">
+              <h2 class="featurette-heading teamText">
+                Temos um time altamente diversificado e comprometido com resultados, 
+                conheça alguns de nossos funcionários: 
+              </h2>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-4 mx-auto">
+              <img class="rounded-circle" src="img/pessoas/roberto.jpeg" alt="Roberto" width="250" height="250">
+              <h3> Roberto Guzmán - CEO </h3><br>
+              <p>
+                <a class="btn yellowBtn" href="#" role="button" 
+                data-toggle="modal" data-target="#robertoModal">Mais informações +</a></p>
+            </div>
+
+            <div class="col-lg-4 mx-auto">
+              <img class="rounded-circle" src="img/pessoas/lukas.jpeg" alt="Lukas" width="250" height="250">
+              <h3> Lukas Angelim - Diretor Executivo </h3>
+              <p><a class="btn yellowBtn" href="#" role="button" 
+                data-toggle="modal" data-target="#lukasModal">Mais informações +</a></p>
+            </div>
+          </div>
+
+          
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="rounded-circle" src="img/pessoas/cirineu.jpeg" alt="Cirineu" width="180" height="180">
+              <h4> Cirineu Guilherme<br>[Desenvolvedor]</h4>
+              <p><a class="btn yellowBtn" href="#" role="button" 
+                data-toggle="modal" data-target="#cirineuModal">Mais informações +</a></p>
+            </div>
+
+            <div class="col-lg-4">
+              <img class="rounded-circle" src="img/pessoas/ramires.jpeg" alt="Ramires" width="180" height="180">
+              <h4> Ramires Nascimento<br>[Líder Técnico]</h4>
+              <p><a class="btn yellowBtn" href="#" role="button" 
+                data-toggle="modal" data-target="#ramiresModal">Mais informações +</a></p>
+            </div>
+
+            <div class="col-lg-4">
+              <img class="rounded-circle" src="img/pessoas/joao.jpg" alt="João Victor" width="180" height="180">
+              <h4> João Victor<br>[Desenvolvedor]</h4>
+              <p><a class="btn yellowBtn" href="#" role="button" 
+                data-toggle="modal" data-target="#joaoModal">Mais informações +</a></p>
+          </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 mx-auto">
+              <img class="rounded-circle" src="img/pessoas/tallis.jpg" alt="Tallis" width="180" height="180">
+              <h4> Tallis<br>[Designer]</h4>
+              <p><a class="btn yellowBtn" href="#" role="button" 
+                data-toggle="modal" data-target="#tallisModal">Mais informações +</a></p>
+            </div>
+
+            <div class="col-lg-4 mx-auto">
+              <img class="rounded-circle" src="img/pessoas/levy.jpeg" alt="Levy" width="180" height="180">
+              <h4> Levy Cristian<br>[Designer]</h4>
+              <p><a class="btn yellowBtn" href="#" role="button" 
+                data-toggle="modal" data-target="#levyModal">Mais informações +</a></p>
+            </div>
+          </div>
+          <hr class="featurette-divider">
+        </div>
+
+        <div class="container-fluid marketing">
+          <h2 class="text-center text" style="width:475px;"> Porque nos contratar?</h2>
+          <div class="row">
+
+            <div class="col-lg-4">
+              <img class="" src="img/icons/crescimento.png" alt="Crescimento" width="250" height="180">
+              <h2>Crescimento</h2>
+              <p class="p-marketing">Os sites e aplicativos tornaram-se os meios de marketing digital mais populares e poderosos. Quer expandir o seu negócio? Nos mande um email!</p>
+              <p><a class="btn yellowBtn btn-marketing1" href="#" role="button" data-toggle="modal" data-target="#contactModal">Enviar email &raquo;</a></p>
+            </div>
+
+            <div class="col-lg-4">
+              <img class="img" src="img/icons/economia.png" alt="Economia" width="250" height="180">
+              <h2>Economia</h2>
+              <p class="p-marketing">Ter o seu próprio site e aplicativo é um investimento com alto retorno. O seu negócio ganhará clientes e muito mais! Vamos fazer um orçamento?</p>
+              <p><a class="btn yellowBtn btn-marketing2" href="#" role="button" data-toggle="modal" data-target="#contactModal">Eu quero! &raquo;</a></p>
+            </div>
+
+            <div class="col-lg-4">
+              <img class="" src="img/icons/ideia.png" alt="Ideia" width="250" height="180">
+              <h2>Você tem uma ideia?</h2>
+              <p class="p-marketing">Tem alguma ideia, mas não acredita no potêncial dela? Vamos conversar e tentar esclarecer as suas dúvidas sem nenhum compromisso!</p>
+              <p><a class="btn yellowBtn btn-marketing3" href="#" role="button" data-toggle="modal" data-target="#contactModal">Vamos! &raquo;</a></p>
+            </div>
+
+          </div>
+
+
+          <hr class="featurette-divider">
+          <section id="Fazemos">
+            <h2 class="text-center text" style="width:430px;">O que nós fazemos?</h2>
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading first">Desenvolvimento de sites e de Sistemas Web.<span class="text-muted"> Que tal ter o seu negócio presente na internet?</span></h2>
+
+              </div>
+              <div class="col-md-5">
+                <img class="featurette-image img-fluid markImgRight" src="img/icons/desktop.png" alt="Websites">
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Desenvolvimento de aplicativos para Android e IOS.<span class="text-muted"> Quer ter o seu aplicativo na PlayStore e Apple Store?</span></h2>
+
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img class="featurette-image img-fluid markImgLeft" src="img/icons/mobile-app.png" alt="Mobile Apps">
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading third">Design de todo o marketing digital e proteção legal da sua marca.<span class="text-muted"> Vamos desenhar?</span> </h2>
+
+              </div>
+              <div class="col-md-5">
+                <img class="featurette-image img-fluid markImgRight" src="img/icons/design.png" alt="Design">
+              </div>
+            </div>
+          </section>
+          <hr class="featurette-divider">
+        </div>
+      </section>
+
+
+      <section id="contato">
+        <div class="row">
+          <button type="button" class="btn-lg yellowBtn mx-auto" data-toggle="modal" data-target="#contactModal">
+            Nos envie uma mensagem!
+          </button>
+        </div>
+  
+          <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="ModalLabel">Enviar email de contato!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 mx-auto">
+                    <form class="form" action="email-pt.php" method="POST" role="form">
+                      <div class="form-group">
+                        <label class="form-label" for="nome">Nome</label>
+                        <input type="text" class="form-control" name="nome" placeholder="Nome" tabindex="1" required>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" class="form-control" name="email" placeholder="Email" tabindex="2" required>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label" for="email">Telefone</label>
+                        <input type="text" class="form-control" name="telefone" placeholder="Telefone com DD" tabindex="3" required>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label" for="menssage">Mensagem</label>
+                        <textarea rows="5" cols="50" name="mensagem" class="form-control"  placeholder="Mensagem..." tabindex="4" required></textarea>
+                      </div>
+                      <div class="row">
+                        <button type="submit" class="btnEnv mx-auto">Enviar!</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <footer class="container-fluid text-center">
+        <p>IDeapps - Sede Fortaleza Rua Felino Barroso, 643 - Fatima, Fortaleza - CE, 60050-130</p>
+        <p class="redes-sociais-link">&copy; 2019 - 2020 , IDEAPPS DESENVOLVIMENTO DE APLICACOES E DISPOSITIVOS LTDA. <br>
+            33.664.903/0001-26
+        </p>
+        <a class="redes-sociais-link" href=""><img class="redes-sociais" src="img/icons/Logo_Facebook.png" alt="facebook" width="70"></a>
+        <a class="redes-sociais-link" href="https://www.instagram.com/ideappsbr/"><img class="redes-sociais" src="img/icons/Logo_Instagram.png" alt="instagram" width="70"></a>
+      </footer><br><br>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+</body>
+</html>

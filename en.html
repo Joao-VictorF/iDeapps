@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137965503-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-137965503-1');
+  </script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="theme-color" content="#e2ac0c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#e2ac0c">
+  <meta name="msapplication-navbutton-color" content="#e2ac0c">
+  <link rel="shortcut icon" href="img/icons/lamp.png" />
+  <title>iDeapps &mdash; Website and application development</title>
+  <meta name="description" content="Website and application development agency"/>
+  <meta name="author" content="iDeapps"/>
+  <meta name="keywords" content="Development, web development, website development,
+  mobile development, application development, android development, iOS development, systems development"/>
+
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/loading.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+  <script src="js/jQuery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/Typed.js"></script>
+
+  <script type="text/javascript">
+      var en = true;
+      var pt = false;
+      var es = false;
+  </script>
+</head>
+
+<body id="en">
+
+<div id="load">
+  <img src="img/icons/preloader.gif" alt="loader" width="80" height="80"/>
+</div>
+
+<div id="site">
+  <header>
+    <nav class="hidenav navbar-expand-md navbar-dark fixed-top">
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <div class="col-lg-5 col-md-2 align-self-start">
+            <a class="navbar-brand" href="#"><img src="img/icons/whiteLogo.png" width="150"></a>
+          </div>
+          <div class="col-xl-3 col-lg-5 col-md-7 align-self-end">
+            <div class="collapse navbar-collapse align-self-end">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link borderBtm" href="#">Home</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link borderBtm" id="marketingLink" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link borderBtm" id="contatoLink" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">
+                    <div class="dropdown">
+                      <a id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/icons/Bandeira_EUA.png" width="50" aria-haspopup="true">
+                        <span class="seta"> &#9662</span>
+                      </a>
+                      <div class="dropdown-menu" id="dropdown" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button"><a href="pt.html"><img src="img/icons/Bandeira_BR.png" width="50"></a></button>
+                        <button class="dropdown-item" type="button"><a href="es.html"><img src="img/icons/Bandeira_MX.png" width="50"></a></button>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar fixed-top">
+      <div class="menuToggle">
+        <input type="checkbox" class="menuLink" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#" id="marketingLink-sm"><li>About</li></a>
+          <a href="#" id="contatoLink-sm"><li>Contact</li></a>
+          <br><br>
+          <li class="nav-item">
+            <a class="nav-link">
+              <div class="dropdown">
+                <a id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="img/icons/Bandeira_EUA.png" width="50" aria-haspopup="true">
+                  &#9662
+                </a>
+                <div class="dropdown-menu" id="dropdown2" aria-labelledby="dropdownMenu2">
+                  <button class="dropdown-item" type="button"><a href="pt.html"><img src="img/icons/Bandeira_BR.png" width="50"></a></button>
+                  <button class="dropdown-item" type="button"><a href="es.html"><img src="img/icons/Bandeira_MX.png" width="50"></a></button>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main">
+    <div id="Carrousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="first-slide" src="img/bg2.png" alt="First slide">
+          <div class="container-fluid">
+            <div class="carousel-caption text-left">
+              <h1 class="textType" id="bemVindo"></h1>
+              <p></p>
+              <p><a class="button btn btn-lg" id="Interesse" href="#" role="button">Let's do something interesting?</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="button" class="back-to-top" type="button"></button>
+
+    <section id="marketing">
+      <div class="container-fluid marketing">
+        <h2 class="text-center text" style="width: 300px;"> Who are we?</h2>
+        <div class="row featurette quemSomos justify-content-center">
+          <div class="col-xl-10">
+            <h2 class="featurette-heading">
+              iDeapps is a professional and committed company that offers programming and communication solutions through technology and innovation. <br>
+              <span id="quemSomos" class="text-muted"></span>
+            </h2>
+
+          </div>
+        </div>
+
+        <h2 class="text-center text" style="width: 255px">Our team</h2>
+          <div class="row featurette justify-content-center">
+            <div class="col-xl-10">
+              <h2 class="featurette-heading teamText">
+                  We have a highly diversified and committed team with results,
+                  meet some of our employees: 
+              </h2>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-4 mx-auto">
+              <img class="rounded-circle" src="img/pessoas/roberto.jpeg" alt="Roberto" width="250" height="250">
+              <h3> Roberto Guzmán - CEO</h3><br>
+              <p><a class="btn yellowBtn" href="#" role="button" 
+                data-toggle="modal" data-target="#robertoModal">More information +</a></p>
+            </div>
+
+            <div class="col-lg-4 mx-auto">
+              <img class="rounded-circle" src="img/pessoas/lukas.jpeg" alt="Lukas" width="250" height="250">
+              <h3> Lukas Angelim - Administrator</h3>
+              <p><a class="btn yellowBtn" href="#" role="button" 
+                data-toggle="modal" data-target="#lukasModal">More information +</a></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="rounded-circle" src="img/pessoas/cirineu.jpeg" alt="Cirineu" width="180" height="180">
+              <h4> Cirineu Guilherme<br>[Developer]</h4>
+              <p><a class="btn yellowBtn" href="#" role="button" 
+                data-toggle="modal" data-target="#cirineuModal">More information +</a></p>
+            </div>
+
+            <div class="col-lg-4">
+              <img class="rounded-circle" src="img/pessoas/ramires.jpeg" alt="Ramires" width="180" height="180">
+              <h4> Ramires Nascimento<br>[Technical leader]</h4>
+              <p><a class="btn yellowBtn" href="#" role="button" 
+                data-toggle="modal" data-target="#ramiresModal">More information +</a></p>
+            </div>
+
+            <div class="col-lg-4">
+              <img class="rounded-circle" src="img/pessoas/joao.jpg" alt="João" width="180" height="180">
+              <h4> Joao Victor<br>[Developer]</h4>
+              <p><a class="btn yellowBtn" href="#" role="button" 
+                data-toggle="modal" data-target="#joaoModal">More information +</a></p>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-4 mx-auto">
+                <img class="rounded-circle" src="img/pessoas/tallis.jpg" alt="" width="180" height="180">
+                <h4> Tallis<br>[Designer]</h4>
+                <p><a class="btn yellowBtn" href="#" role="button" 
+                  data-toggle="modal" data-target="#tallisModal">More information +</a></p>
+              </div>
+      
+              <div class="col-lg-4 mx-auto">
+                <img class="rounded-circle" src="img/pessoas/levy.jpeg" alt="Levy" width="180" height="180">
+                <h4> Levy Cristian<br>[Designer]</h4>
+                <p><a class="btn yellowBtn" href="#" role="button" 
+                  data-toggle="modal" data-target="#levyModal">More information +</a></p>
+              </div>
+            </div>
+          
+         
+          <hr class="featurette-divider">
+        </div>
+      </div>
+
+      <div class="container-fluid marketing">
+        <h2 class="text-center text" style="width: 300px; padding-top: 0px; padding-bottom: 15px;"> Why hire us?</h2>
+        <div class="row">
+
+          <div class="col-lg-4">
+            <img class="img" src="img/icons/crescimento.png" alt="growth" width="250" height="180">
+            <h2>Opportunity</h2>
+            <p class="p-marketing">The websites and applications have become the most popular and powerful digital marketing mediums. Want to expand your business? Send us an email!</p>
+            <p><a class="btn yellowBtn btn-marketing1" href="#" role="button" data-toggle="modal" data-target="#contactModal">Send email &raquo;</a></p>
+          </div>
+
+          <div class="col-lg-4">
+            <img class="img" src="img/icons/economia.png" alt="economy" width="250" height="180">
+            <h2>Economy</h2>
+            <p class="p-marketing">Having your own website and application is a high return investment. Your business will win customers and more! Let's make a budget?</p>
+            <p><a class="btn yellowBtn btn-marketing2" href="#" role="button" data-toggle="modal" data-target="#contactModal">I want to! &raquo;</a></p>
+          </div>
+
+          <div class="col-lg-4">
+            <img class="" src="img/icons/ideia.png" alt="idea" width="250" height="180">
+            <h2>Do you have an idea?</h2>
+            <p class="p-marketing">Do you have any idea, but you do not believe in her potency? Let's talk and try to answer your questions without any commitment!</p>
+            <p><a class="btn yellowBtn btn-marketing3" href="#" role="button" data-toggle="modal" data-target="#contactModal">Let's go! &raquo;</a></p>
+          </div>
+
+        </div>
+
+
+        <hr class="featurette-divider">
+        <section id="Fazemos">
+          <h2 class="text-center text" style="width: 300px">What we do?</h2>
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading first">Website Development and Web Systems.<span class="text-muted"> How about having your business present on the internet?</span></h2>
+
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-fluid markImgRight" src="img/icons/desktop.png" alt="Websites">
+            </div>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">Development of applications for Android and IOS.<span class="text-muted">  Want to have your app on PlayStore and the Apple Store?</span></h2>
+
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img class="featurette-image markImgLeft img-fluid" src="img/icons/mobile-app.png" alt="Mobile Apps">
+            </div>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading third">Design of all the digital marketing and legal proteccion of your brand<span class="text-muted"> Let's draw?</span> </h2>
+
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image markImgRight img-fluid" src="img/icons/design.png" alt="Design">
+            </div>
+          </div>
+        </section>
+        <hr class="featurette-divider">
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+      <div class="row">
+        <button type="button" class="btn-lg contactBtn mx-auto" data-toggle="modal" data-target="#contactModal">
+          Send us a message!
+        </button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalLabel">Send contact email!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 mx-auto">
+                <form class="form" action="email-en.php" method="POST" role="form">
+                  <div class="form-group">
+                    <label class="form-label" for="nome">Name</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Name" tabindex="1" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" tabindex="2" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="email">Telefone</label>
+                    <input type="text" class="form-control" name="telefone" placeholder="Phone" tabindex="3" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="menssage">Message</label>
+                    <textarea rows="5" cols="50" name="mensagem" class="form-control" id="menssage" placeholder="Message..." tabindex="4" required></textarea>
+                  </div>
+
+                  <div class="row">
+                    <button type="submit" class="btnEnv mx-auto">Submit!</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+     <footer class="container-fluid text-center">
+        <p class="redes-sociais-link">&copy; 2019 - 2020 , IDEAPPS DESENVOLVIMENTO DE APLICACOES E DISPOSITIVOS LTDA. <br>
+            33.664.903/0001-26
+        </p>
+        <a class="redes-sociais-link" href=""><img class="redes-sociais" src="img/icons/Logo_Facebook.png" alt="facebook" width="70"></a>
+        <a class="redes-sociais-link" href="https://www.instagram.com/ideappsbr/"><img class="redes-sociais" src="img/icons/Logo_Instagram.png" alt="instagram" width="70"></a>
+      </footer><br><br><br>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+</body>
+</html>
