@@ -13,7 +13,10 @@ html, body {
 }
 #site {
   background-color: #f3f3f3;
-
+}
+#contato {
+  padding: 20px 0;
+  background-color: #e2ad09;
 }
 .button {
   background: #fff !important;
@@ -37,6 +40,7 @@ html, body {
 .dropdown-menu {
   background: transparent !important;
   border: none !important;
+  transform: translate3d(0px, 51px, 0px) !important;
 }
 .dropdown-item {
   padding: 0 !important;
@@ -225,7 +229,6 @@ html, body {
   background-size: 800px;
   background-repeat: no-repeat;
   background-position-x: 50vw;
-  background-position-y: 80px;
   position: initial;
   height: 55vw; 
 }
@@ -284,16 +287,20 @@ html, body {
 .featurette-divider {
   margin: 3rem 0; 
 }
-/* .col-md-7 .featurette-heading {
-  margin-top: 125px !important;
-} */
+.rounded-circle {
+  object-fit: cover;
+  border: 1px solid rgba(150,150,150,.6);
+}
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -0.05rem;
   font-size: 1.8rem;
-  margin-top: 20px !important;
+  
   text-align: center;
+}
+.fazemosTitle {
+  margin-top: 100px !important;
 }
 .featurette-image {
   width: 700px;
@@ -412,26 +419,45 @@ button.back-to-top.show:active {
   -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 /*--------------------- Contato ---------------------*/
-.yellowBtn {
-  background-color: #e2ad09 !important;
-  color: #fff !important;
-  border: none;
+
+.btnEnv {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(120,120,120,.5);
   margin-bottom: 30px;
+}
+.footer-title {
+  color: #787878;
+  font-size: 22pt;
+  font-weight: bold;
+  text-align: center;
+}
+.map {
+  display: flex;
+  justify-content: center;
+}
+.endereco {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+} 
+.footer-copy {
+  color: #ffffff;
+  text-align: center;
 }
 textarea {
   resize: none;
 }
 .btnEnv {
-  color: #ffffff;
-  background-color: #e2ad09;
-  border: none;
+  background-color: #ffffff !important;
+  border: 1px solid rgba(120,120,120,.5);
   padding: 5px 35px;
   border-radius: 10px;
   font-size: 14pt;
 }
 .form-label {
-  font-size: 12px;
-  color: #5e9bfc;
+  font-size: 14px;
+  font-weight: bold;
   margin: 0;
   display: block;
   opacity: 1;
@@ -521,7 +547,7 @@ textarea {
     left: 60vw;
   }
   .menuToggle span , .menuToggle input {
-    left: 83vw;
+    left: 75vw;
   }
   .navbar-brand {
     font-size: 18pt !important;
@@ -641,11 +667,6 @@ textarea {
   }
   .featurette-heading {
     font-size: 30px;
-  }
-}
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
   }
 }
 /* --------------------------------------------------*/

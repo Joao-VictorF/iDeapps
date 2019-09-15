@@ -53,7 +53,7 @@
           <div class="col-lg-5 col-md-2 align-self-start">
             <a class="navbar-brand" href="#"><img src="img/icons/whiteLogo.png" width="150"></a>
           </div>
-          <div class="col-xl-3 col-lg-5 col-md-7 align-self-end">
+          <div class="col-xl-5 col-lg-6 col-md-7 align-self-end">
             <div class="collapse navbar-collapse align-self-end">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -292,9 +292,9 @@
         <section id="Fazemos">
           <h2 class="text-center text" style="width: 300px">What we do?</h2>
           <div class="row featurette web">
-            <div class="col-lg-1 col-md-1 col-sm-1 col-1"></div>
+            <div class="col-lg-2 col-md-1 col-sm-1 col-1"></div>
             <div class="col-lg-7 col-md-7 col-sm-8 col-8">
-              <h2 class="featurette-heading first"><b>Website Development and Web Systems.</b>
+              <h2 class="featurette-heading fazemosTitle first"><b>Website Development and Web Systems.</b>
                 <span class="text-muted"> How about having your business present on the internet?</span>
               </h2>
             </div>
@@ -303,9 +303,9 @@
           <hr class="featurette-divider">
 
           <div class="row featurette mobile">
-            <div class="col-lg-5 col-md-5 col-sm-5 col-4"></div>
+            <div class="col-lg-4 col-md-5 col-sm-5 col-4"></div>
             <div class="col-lg-7 col-md-7 col-sm-7 col-8">
-              <h2 class="featurette-heading"><b>Development of applications for Android and IOS.</b>
+              <h2 class="featurette-heading fazemosTitle"><b>Development of applications for Android and IOS.</b>
                 <span class="text-muted">  Want to have your app on PlayStore and the Apple Store?</span>
               </h2>
             </div>
@@ -314,9 +314,9 @@
           <hr class="featurette-divider">
 
           <div class="row featurette design">
-            <div class="col-lg-1 col-md-1 col-sm-1 col-1"></div>
+            <div class="col-lg-2 col-md-1 col-sm-1 col-1"></div>
             <div class="col-md-7 col-md-7 col-sm-8 col-8">
-              <h2 class="featurette-heading third"><b>Design of all the digital marketing and legal proteccion of your brand</b>
+              <h2 class="featurette-heading fazemosTitle third"><b>Design of all the digital marketing and legal proteccion of your brand</b>
                 <span class="text-muted"> Let's draw?</span> 
               </h2>
             </div>
@@ -327,62 +327,53 @@
     </section>
 
     <!-- Contato -->
-    <section id="contato">
-      <div class="row">
-        <button type="button" class="btn-lg contactBtn mx-auto" data-toggle="modal" data-target="#contactModal">
-          Send us a message!
-        </button>
-      </div>
-      <!-- Modal -->
-      <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="ModalLabel">Send contact email!</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+    <footer id="contato">
+      <div class="row justify-content-around">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-12 align-self-center">
+          <h5 class="footer-title">Contact us!</h5>
+          <form class="form" action="email-en.php" method="POST" role="form">
+            <div class="form-group">
+              <label class="form-label" for="nome">Name</label>
+              <input type="text" class="form-control" name="nome" placeholder="Name" tabindex="1" required>
             </div>
-            <div class="modal-body">
-              <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 mx-auto">
-                <form class="form" action="email-en.php" method="POST" role="form">
-                  <div class="form-group">
-                    <label class="form-label" for="nome">Name</label>
-                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Name" tabindex="1" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="email">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" tabindex="2" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="email">Telefone</label>
-                    <input type="text" class="form-control" name="telefone" placeholder="Phone" tabindex="3" required>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label" for="menssage">Message</label>
-                    <textarea rows="5" cols="50" name="mensagem" class="form-control" id="menssage" placeholder="Message..." tabindex="4" required></textarea>
-                  </div>
-
-                  <div class="row">
-                    <button type="submit" class="btnEnv mx-auto">Submit!</button>
-                  </div>
-                </form>
-              </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" class="form-control" name="email" placeholder="Email" tabindex="2" required>
             </div>
-          </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Telephone</label>
+              <input type="text" class="form-control" name="telefone" placeholder="Telephone" tabindex="3" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="menssage">Message</label>
+              <textarea rows="3" cols="50" name="mensagem" class="form-control"  placeholder="Message" tabindex="4" required></textarea>
+            </div>
+            <div class="row">
+              <button type="submit" class="btnEnv mx-auto">Submit!</button>
+            </div>
+          </form>
         </div>
+        
+        <div class="col-lg-5 col-md-5 col-sm-5 col-12">
+          
+          <h5 class="footer-title">Where are we?</h5><br>
+          <a class="map" target="_blank" href="https://www.google.com/maps/place/IDeapps+-+Sede+Fortaleza/@-3.7485771,-38.5299943,17z/data=!3m1!4b1!4m5!3m4!1s0x7c7491a257f2d89:0x8d987e404aad27a5!8m2!3d-3.7485771!4d-38.5278056">
+            <img src="img/map.png" alt="mapa">
+          </a>
+
+          <p class="endereco">
+            IDeapps - Sede Fortaleza Rua Felino Barroso, 643 - Fatima,
+            Fortaleza - CE, 60050-130
+          </p>
+
+        </div>  
       </div>
-
-
-    </section>
-
-     <footer class="container-fluid text-center">
-        <p class="redes-sociais-link">&copy; 2019 - 2020 , IDEAPPS DESENVOLVIMENTO DE APLICACOES E DISPOSITIVOS LTDA. <br>
-            33.664.903/0001-26
-        </p>
-        <a class="redes-sociais-link" href=""><img class="redes-sociais" src="img/icons/Logo_Facebook.png" alt="facebook" width="70"></a>
-        <a class="redes-sociais-link" href="https://www.instagram.com/ideappsbr/"><img class="redes-sociais" src="img/icons/Logo_Instagram.png" alt="instagram" width="70"></a>
-      </footer><br><br><br>
+      <hr class="featurette-divider">
+      <p class="footer-copy">
+        Copyright &copy; 2019 IDEAPPS DESENVOLVIMENTO DE APLICACOES E DISPOSITIVOS LTDA. <br>
+        33.664.903/0001-26 All rights reserved.
+      </p>
+    </footer>
   </main>
 </div>
 
